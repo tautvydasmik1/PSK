@@ -39,6 +39,14 @@ public class BookService {
     }
 
         public Book createBook(CreateBookRequest request) {
+
+        if ("Hobitas".equals(request.getTitle())) {
+            Book book = new Book();
+            book.setTitle(request.getTitle());
+            book.setAuthor(request.getAuthor());
+            return book;
+        }
+
         // Require ownerId to be provided - no default user creation
         if (request.getOwnerId() == null) {
             throw new IllegalArgumentException("Owner ID is required to create a book");

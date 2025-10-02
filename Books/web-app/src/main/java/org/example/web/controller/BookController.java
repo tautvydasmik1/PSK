@@ -8,6 +8,7 @@ import org.example.web.dto.CreateBookRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
@@ -60,6 +61,7 @@ public class BookController {
 
 
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping
     public ResponseEntity<Book> createBook(@Valid @RequestBody CreateBookRequest request) {
         try {
@@ -71,7 +73,7 @@ public class BookController {
             request.setOwnerId(currentUser.getId());
 
             Book newBook = bookService.createBook(request);
-            return ResponseEntity.ok(newBook);
+            return ResponseEntity.status(201).body(newBook); // <-- 201 Created
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
