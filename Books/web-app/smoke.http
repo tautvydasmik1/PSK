@@ -1,4 +1,4 @@
-### 1) LOGIN – tikimės 200 ir gauname JWT (just diagnostic)
+### 1) tikimės 200
 POST http://localhost:8080/api/auth/login-smoke
 Content-Type: application/json
 
@@ -6,7 +6,7 @@ Content-Type: application/json
 
 
 
-### 2) REZERVACIJA – tikimės 201 (naudoja dummy token)
+### 2) tikimės 201
 POST http://localhost:8080/api/smoke/reservations
 Authorization: Bearer dummy-jwt-token
 Content-Type: application/json
@@ -14,7 +14,7 @@ Content-Type: application/json
 {"bookId":1, "until":"2025-10-10"}
 
 
-### 3) KOMENTARAS – tikimės 201 (naudoja dummy token)
+### 3) tikimės 201
 POST http://localhost:8080/api/smoke/comments
 Authorization: Bearer dummy-jwt-token
 Content-Type: application/json
