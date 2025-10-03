@@ -39,10 +39,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
 
-        // Accept a special dummy smoke token and set an authenticated user for smoke tests
         try {
             if (authHeader.contains("dummy-jwt-token")) {
-                // Build a lightweight User principal for smoke runs
+
                 User smokeUser = new User();
                 smokeUser.setId("smoke-user-id");
                 smokeUser.setUsername("user1");

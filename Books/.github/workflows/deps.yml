@@ -1,0 +1,33 @@
+name: Dependency Graph (Maven)
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  submit-deps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+
+      # Pastatome projektą, kad Maven išspręstų visus deps (POM yra Books/ kataloge)
+      - name: Build (resolve deps)
+        working-directory: Books
+        run: mvn -q -DskipTests package
+
+      # Pateikiame priklausomybių grafą GitHub’ui iš Books/ katalogo
+      - name: Submit dependency graph (Maven)
+        uses: advanced-security/maven-dependency-submission-action@v4
+        with:
+          directory: Books
