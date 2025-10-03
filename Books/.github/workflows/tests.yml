@@ -22,6 +22,20 @@ jobs:
       - name: Package web app
         run: mvn -pl web-app -am -DskipTests package
 
+      - name: Run OWASP Dependency-Check (GitHub Action)
+        uses: jeremylong/dependency-check-action@v2
+        with:
+          scan: 'web-app'
+          format: 'HTML'
+          out: 'web-app/target/dependency-check-report.html'
+
+      - name: Upload dependency-check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: web-app/target/dependency-check-report.html
+
       - name: Start web app in background
         # start the web-app module using spring-boot:run to avoid guessing the jar name
         run: |
