@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/Books"        # kur yra tavo pom.xml
+    schedule:
+      interval: "daily"       # weekly / daily / monthly
+    open-pull-requests-limit: 5
+    # (nebūtina) sugrupuoja PR'us:
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]

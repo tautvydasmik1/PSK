@@ -1,0 +1,3887 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.example:web-app >-------------------------
+[INFO] Building Books Web Application 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.0:run (default-cli) > test-compile @ web-app >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ web-app ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ web-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ web-app ---
+[INFO] skip non existing resourceDirectory /Users/gytis.vaicekauskas/Desktop/Lukui/Books/web-app/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ web-app ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.4.0:run (default-cli) < test-compile @ web-app <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.0:run (default-cli) @ web-app ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2025-08-31T11:51:20.145+03:00  INFO 3934 --- [           main] org.example.web.WebApplication           : Starting WebApplication using Java 24.0.2 with PID 3934 (/Users/gytis.vaicekauskas/Desktop/Lukui/Books/web-app/target/classes started by gytis.vaicekauskas in /Users/gytis.vaicekauskas/Desktop/Lukui/Books/web-app)
+2025-08-31T11:51:20.146+03:00 DEBUG 3934 --- [           main] org.example.web.WebApplication           : Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-08-31T11:51:20.146+03:00  INFO 3934 --- [           main] org.example.web.WebApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T11:51:20.404+03:00  INFO 3934 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T11:51:20.433+03:00  INFO 3934 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 6 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/gytis.vaicekauskas/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.33/tomcat-embed-core-10.1.33.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2025-08-31T11:51:20.636+03:00  INFO 3934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-31T11:51:20.641+03:00  INFO 3934 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T11:51:20.641+03:00  INFO 3934 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-08-31T11:51:20.659+03:00  INFO 3934 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-08-31T11:51:20.659+03:00  INFO 3934 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 496 ms
+2025-08-31T11:51:20.672+03:00  INFO 3934 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T11:51:20.749+03:00  INFO 3934 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:booksdb user=SA
+2025-08-31T11:51:20.749+03:00  INFO 3934 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T11:51:20.754+03:00  INFO 3934 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:booksdb'
+2025-08-31T11:51:20.795+03:00  INFO 3934 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T11:51:20.814+03:00  INFO 3934 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-08-31T11:51:20.833+03:00  INFO 3934 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T11:51:20.933+03:00  INFO 3934 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T11:51:20.950+03:00  WARN 3934 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T11:51:20.955+03:00  INFO 3934 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T11:51:21.364+03:00  INFO 3934 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists books cascade 
+Hibernate: 
+    drop table if exists comments cascade 
+Hibernate: 
+    drop table if exists messages cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+Hibernate: 
+    drop table if exists user_action_logs cascade 
+Hibernate: 
+    drop table if exists users cascade 
+Hibernate: 
+    create table books (
+        price float(53),
+        publication_year integer,
+        rating float(53) not null,
+        review_count integer not null,
+        created_at timestamp(6),
+        author varchar(255) not null,
+        category varchar(255) not null,
+        description varchar(255),
+        id varchar(255) not null,
+        owner_id varchar(255),
+        review varchar(255),
+        title varchar(255) not null,
+        status enum ('AVAILABLE','BORROWED','DAMAGED','LOST','MAINTENANCE','RESERVED','SOLD'),
+        primary key (id)
+    )
+Hibernate: 
+    create table comments (
+        is_deleted boolean not null,
+        created_at timestamp(6) not null,
+        updated_at timestamp(6) not null,
+        author_id varchar(255) not null,
+        book_id varchar(255) not null,
+        content TEXT not null,
+        id varchar(255) not null,
+        parent_comment_id varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table messages (
+        deleted_by_recipient boolean,
+        deleted_by_sender boolean,
+        depth integer not null,
+        is_deleted boolean,
+        is_read boolean,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        book_id varchar(255),
+        content TEXT not null,
+        id varchar(255) not null,
+        parent_message_id varchar(255),
+        recipient_id varchar(255),
+        sender_id varchar(255),
+        subject TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table transactions (
+        completed_at timestamp(6),
+        created_at timestamp(6),
+        book_id varchar(255),
+        borrower_id varchar(255),
+        id varchar(255) not null,
+        lender_id varchar(255),
+        status enum ('ACTIVE','CANCELLED','COMPLETED','PENDING'),
+        type enum ('BORROW','RESERVE','SALE'),
+        primary key (id)
+    )
+Hibernate: 
+    create table user_action_logs (
+        timestamp timestamp(6) not null,
+        action_type varchar(255) not null,
+        description TEXT not null,
+        id varchar(255) not null,
+        ip_address varchar(255),
+        target_id varchar(255),
+        target_type varchar(255),
+        user_agent varchar(255),
+        user_id varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        date_of_birth date not null,
+        email varchar(255) not null unique,
+        first_name varchar(255) not null,
+        id varchar(255) not null,
+        last_name varchar(255) not null,
+        password varchar(255) not null,
+        phone varchar(255),
+        username varchar(255) not null unique,
+        user_type enum ('ADMIN','REGULAR_USER'),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists books 
+       add constraint FKqhbjpnph6e33p08wfax7dd475 
+       foreign key (owner_id) 
+       references users
+Hibernate: 
+    alter table if exists comments 
+       add constraint FKn2na60ukhs76ibtpt9burkm27 
+       foreign key (author_id) 
+       references users
+Hibernate: 
+    alter table if exists comments 
+       add constraint FK1ey8gegnanvybix5a025vepf4 
+       foreign key (book_id) 
+       references books
+Hibernate: 
+    alter table if exists comments 
+       add constraint FK7h839m3lkvhbyv3bcdv7sm4fj 
+       foreign key (parent_comment_id) 
+       references comments
+Hibernate: 
+    alter table if exists messages 
+       add constraint FKcdl5vmc55sku0la6cp5qdvtyx 
+       foreign key (book_id) 
+       references books
+Hibernate: 
+    alter table if exists messages 
+       add constraint FK8cs7qdu3mdbr08xirdmsfxpgk 
+       foreign key (parent_message_id) 
+       references messages
+Hibernate: 
+    alter table if exists messages 
+       add constraint FKhdkwfnspwb3s60j27vpg0rpg6 
+       foreign key (recipient_id) 
+       references users
+Hibernate: 
+    alter table if exists messages 
+       add constraint FK4ui4nnwntodh6wjvck53dbk9m 
+       foreign key (sender_id) 
+       references users
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKhwis5rd79vrejvuuuc513px7a 
+       foreign key (book_id) 
+       references books
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FK22lypf9irklip7jpnrdr2aomb 
+       foreign key (borrower_id) 
+       references users
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKh8y0qgdqj4apbihnvnujabn75 
+       foreign key (lender_id) 
+       references users
+Hibernate: 
+    alter table if exists user_action_logs 
+       add constraint FK2odgwdd816wttkhx16es1w5qy 
+       foreign key (user_id) 
+       references users
+2025-08-31T11:51:21.394+03:00  INFO 3934 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T11:51:21.529+03:00 DEBUG 3934 --- [           main] o.e.w.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2025-08-31T11:51:21.550+03:00  INFO 3934 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-31T11:51:23.172+03:00  WARN 3934 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T11:51:23.181+03:00  WARN 3934 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f18d89f5-1448-48a3-ad62-906f51a09246
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-31T11:51:23.193+03:00  INFO 3934 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-31T11:51:23.299+03:00 DEBUG 3934 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-31T11:51:23.386+03:00  INFO 3934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-08-31T11:51:23.390+03:00  INFO 3934 --- [           main] org.example.web.WebApplication           : Started WebApplication in 3.387 seconds (process running for 3.511)
+🚀 Initializing Books Exchange System...
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        users
+        (date_of_birth, email, first_name, last_name, password, phone, user_type, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        users
+        (date_of_birth, email, first_name, last_name, password, phone, user_type, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        users
+        (date_of_birth, email, first_name, last_name, password, phone, user_type, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        users
+        (date_of_birth, email, first_name, last_name, password, phone, user_type, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+✅ Default users created
+Hibernate: 
+    select
+        count(*) 
+    from
+        books b1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+✅ Sample books created
+🎉 System initialization complete!
+📝 Default users:
+   Admin: username=admin, password=admin
+   User 1: username=user, password=password (Alice Johnson)
+   User 2: username=user2, password=password2 (Bob Wilson)
+   User 3: username=user3, password=password3 (Carol Davis)
+🔐 All passwords are securely hashed using BCrypt
+📚 3 sample books added for each user
+2025-08-31T11:51:41.176+03:00  INFO 3934 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-31T11:51:41.176+03:00  INFO 3934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-31T11:51:41.177+03:00  INFO 3934 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-31T11:51:41.187+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /auth/register
+2025-08-31T11:51:41.192+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T11:51:41.193+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /auth/register
+2025-08-31T11:51:41.207+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2025-08-31T11:51:41.207+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T11:51:41.208+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T11:51:57.350+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T11:51:57.352+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T11:51:57.353+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T11:52:06.144+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /auth/register
+2025-08-31T11:52:06.144+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T11:52:06.144+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /auth/register
+2025-08-31T11:52:06.146+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /error
+2025-08-31T11:52:06.146+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T11:52:06.146+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:01:21.683+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:01:21.683+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:01:21.683+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:01:34.420+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:01:34.420+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:01:34.421+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:01:46.022+03:00  INFO 3934 --- [nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: The HTTP header line [tiisimlhdci6mtc1njyzmdg5ncwizxhwijoxnzu2nze3mjk0fq.sbs6f8nrc42vuihc-qsxgvhpeyxicdvdp5n_sxbkirk431hegrfce63k77byjeq10x0d] does not conform to RFC 7230. The request has been rejected.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1087) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:918) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:592) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:293) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:02:36.086+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /books
+2025-08-31T12:02:36.086+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:02:36.087+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:02:36.087+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-08-31T12:02:36.087+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:02:36.087+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:03:04.928+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:03:04.928+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:03:04.928+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:03:53.357+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:03:53.357+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:03:53.357+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:03:53.494+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /admin/user-actions
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:03:53.515+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /admin/user-actions
+2025-08-31T12:03:53.518+03:00 ERROR 3934 --- [nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+
+	at org.example.web.controller.AdminController.getAllUserActions(AdminController.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.example.web.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:70) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:03:53.518+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-08-31T12:03:53.518+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:03:53.519+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:03:53.538+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /admin/actions-by-type?actionType=BOOK_CREATED
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:03:53.540+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /admin/actions-by-type?actionType=BOOK_CREATED
+2025-08-31T12:03:53.543+03:00 ERROR 3934 --- [nio-8080-exec-6] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+
+	at org.example.web.controller.AdminController.getActionsByType(AdminController.java:81) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.example.web.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:70) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:03:53.543+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error?actionType=BOOK_CREATED
+2025-08-31T12:03:53.543+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:03:53.543+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:04:17.107+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:04:17.107+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:04:17.107+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:04:17.213+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:04:17.215+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (author, category, created_at, description, owner_id, price, publication_year, rating, review, review_count, status, title, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user_action_logs
+        (action_type, description, ip_address, target_id, target_type, timestamp, user_id, user_agent, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-31T12:04:28.034+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:04:28.034+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:04:28.034+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:04:28.138+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /admin/user-actions
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:04:28.139+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /admin/user-actions
+2025-08-31T12:04:28.140+03:00 ERROR 3934 --- [nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+
+	at org.example.web.controller.AdminController.getAllUserActions(AdminController.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.example.web.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:70) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:04:28.141+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-08-31T12:04:28.141+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:04:28.141+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:30:39.520+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:30:39.521+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:30:39.521+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:30:39.675+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /books/categories
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:39.677+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /books/categories
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+2025-08-31T12:30:39.687+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:39.688+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /messages/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3
+2025-08-31T12:30:39.688+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:39.689+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /messages/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.book_id,
+        m1_0.content,
+        m1_0.created_at,
+        m1_0.deleted_at,
+        m1_0.deleted_by_recipient,
+        m1_0.deleted_by_sender,
+        m1_0.depth,
+        m1_0.is_deleted,
+        m1_0.is_read,
+        m1_0.parent_message_id,
+        m1_0.recipient_id,
+        m1_0.sender_id,
+        m1_0.subject 
+    from
+        messages m1_0 
+    join
+        books b1_0 
+            on b1_0.id=m1_0.book_id 
+    where
+        (
+            m1_0.sender_id=? 
+            or b1_0.owner_id=?
+        ) 
+    order by
+        m1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:40.221+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /books/available/exclude-current-user
+2025-08-31T12:30:40.221+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:40.226+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+2025-08-31T12:30:40.226+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /books/available/exclude-current-user
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.status=? 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+2025-08-31T12:30:45.550+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /transactions/books/335157a7-8241-48c7-956e-fed2db10f653/reserve
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:45.554+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /transactions/books/335157a7-8241-48c7-956e-fed2db10f653/reserve
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    update
+        books 
+    set
+        author=?,
+        category=?,
+        created_at=?,
+        description=?,
+        owner_id=?,
+        price=?,
+        publication_year=?,
+        rating=?,
+        review=?,
+        review_count=?,
+        status=?,
+        title=? 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (book_id, borrower_id, completed_at, created_at, lender_id, status, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user_action_logs
+        (action_type, description, ip_address, target_id, target_type, timestamp, user_id, user_agent, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-31T12:30:46.601+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /books/search
+2025-08-31T12:30:46.601+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:46.605+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /books/search
+2025-08-31T12:30:46.605+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        (
+            ? is null 
+            or lower(b1_0.title) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.description) like lower(('%'||?||'%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or b1_0.category=?
+        ) 
+        and (
+            ? is null 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape ''
+        ) 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:48.230+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /transactions/books/b601923d-ffe1-4d35-bf51-8902ef508d33/borrow
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:48.235+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /transactions/books/b601923d-ffe1-4d35-bf51-8902ef508d33/borrow
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    update
+        books 
+    set
+        author=?,
+        category=?,
+        created_at=?,
+        description=?,
+        owner_id=?,
+        price=?,
+        publication_year=?,
+        rating=?,
+        review=?,
+        review_count=?,
+        status=?,
+        title=? 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (book_id, borrower_id, completed_at, created_at, lender_id, status, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user_action_logs
+        (action_type, description, ip_address, target_id, target_type, timestamp, user_id, user_agent, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-31T12:30:49.331+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+2025-08-31T12:30:49.330+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /books/search
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:49.336+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /books/search
+2025-08-31T12:30:49.336+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        (
+            ? is null 
+            or lower(b1_0.title) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.description) like lower(('%'||?||'%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or b1_0.category=?
+        ) 
+        and (
+            ? is null 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape ''
+        ) 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:51.725+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:51.729+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:55.742+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /comments/books/8e45aac1-bba0-4ac1-b2c7-e83a63664144/nested
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:55.747+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /comments/books/8e45aac1-bba0-4ac1-b2c7-e83a63664144/nested
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.book_id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.is_deleted,
+        c1_0.parent_comment_id,
+        r1_0.parent_comment_id,
+        r1_0.id,
+        r1_0.author_id,
+        r1_0.book_id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.updated_at,
+        c1_0.updated_at 
+    from
+        comments c1_0 
+    left join
+        comments r1_0 
+            on c1_0.id=r1_0.parent_comment_id 
+    where
+        c1_0.book_id=? 
+        and c1_0.parent_comment_id is null 
+        and c1_0.is_deleted=false 
+        and (
+            r1_0.id is null 
+            or r1_0.is_deleted=false
+        ) 
+    order by
+        c1_0.created_at,
+        r1_0.created_at
+2025-08-31T12:30:57.001+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:57.007+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.book_id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.is_deleted,
+        c1_0.parent_comment_id,
+        r1_0.parent_comment_id,
+        r1_0.id,
+        r1_0.author_id,
+        r1_0.book_id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.updated_at,
+        c1_0.updated_at 
+    from
+        comments c1_0 
+    left join
+        comments r1_0 
+            on c1_0.id=r1_0.parent_comment_id 
+    where
+        c1_0.book_id=? 
+        and c1_0.parent_comment_id is null 
+        and c1_0.is_deleted=false 
+        and (
+            r1_0.id is null 
+            or r1_0.is_deleted=false
+        ) 
+    order by
+        c1_0.created_at,
+        r1_0.created_at
+2025-08-31T12:30:57.641+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:57.644+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /books
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:59.070+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:30:59.076+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.book_id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.is_deleted,
+        c1_0.parent_comment_id,
+        r1_0.parent_comment_id,
+        r1_0.id,
+        r1_0.author_id,
+        r1_0.book_id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.updated_at,
+        c1_0.updated_at 
+    from
+        comments c1_0 
+    left join
+        comments r1_0 
+            on c1_0.id=r1_0.parent_comment_id 
+    where
+        c1_0.book_id=? 
+        and c1_0.parent_comment_id is null 
+        and c1_0.is_deleted=false 
+        and (
+            r1_0.id is null 
+            or r1_0.is_deleted=false
+        ) 
+    order by
+        c1_0.created_at,
+        r1_0.created_at
+2025-08-31T12:31:03.871+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /comments/books/f2165ee3-17e5-4036-92de-023d70579862
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:03.875+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /comments/books/f2165ee3-17e5-4036-92de-023d70579862
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    insert 
+    into
+        comments
+        (author_id, book_id, content, created_at, is_deleted, parent_comment_id, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user_action_logs
+        (action_type, description, ip_address, target_id, target_type, timestamp, user_id, user_agent, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-31T12:31:03.904+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:03.906+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /comments/books/f2165ee3-17e5-4036-92de-023d70579862/nested
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.author_id,
+        c1_0.book_id,
+        c1_0.content,
+        c1_0.created_at,
+        c1_0.is_deleted,
+        c1_0.parent_comment_id,
+        r1_0.parent_comment_id,
+        r1_0.id,
+        r1_0.author_id,
+        r1_0.book_id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.updated_at,
+        c1_0.updated_at 
+    from
+        comments c1_0 
+    left join
+        comments r1_0 
+            on c1_0.id=r1_0.parent_comment_id 
+    where
+        c1_0.book_id=? 
+        and c1_0.parent_comment_id is null 
+        and c1_0.is_deleted=false 
+        and (
+            r1_0.id is null 
+            or r1_0.is_deleted=false
+        ) 
+    order by
+        c1_0.created_at,
+        r1_0.created_at
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:05.796+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /books/search
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:05.799+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /books/search
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        (
+            ? is null 
+            or lower(b1_0.title) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.description) like lower(('%'||?||'%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or b1_0.category=?
+        ) 
+        and (
+            ? is null 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape ''
+        ) 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:11.368+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /messages
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:11.373+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /messages
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    insert 
+    into
+        messages
+        (book_id, content, created_at, deleted_at, deleted_by_recipient, deleted_by_sender, depth, is_deleted, is_read, parent_message_id, recipient_id, sender_id, subject, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user_action_logs
+        (action_type, description, ip_address, target_id, target_type, timestamp, user_id, user_agent, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-31T12:31:13.673+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:13.676+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:15.773+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /books/search
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:15.776+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /books/search
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        (
+            ? is null 
+            or lower(b1_0.title) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.description) like lower(('%'||?||'%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or b1_0.category=?
+        ) 
+        and (
+            ? is null 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape ''
+        ) 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:16.080+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:16.082+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /books/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:18.059+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /messages/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:18.066+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /messages/user/a68b64a1-8466-48ad-93ab-75cfcc8ef5a3
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.book_id,
+        m1_0.content,
+        m1_0.created_at,
+        m1_0.deleted_at,
+        m1_0.deleted_by_recipient,
+        m1_0.deleted_by_sender,
+        m1_0.depth,
+        m1_0.is_deleted,
+        m1_0.is_read,
+        m1_0.parent_message_id,
+        m1_0.recipient_id,
+        m1_0.sender_id,
+        m1_0.subject 
+    from
+        messages m1_0 
+    join
+        books b1_0 
+            on b1_0.id=m1_0.book_id 
+    where
+        (
+            m1_0.sender_id=? 
+            or b1_0.owner_id=?
+        ) 
+    order by
+        m1_0.created_at desc
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:20.449+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /books/search
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:20.453+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /books/search
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        (
+            ? is null 
+            or lower(b1_0.title) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape '' 
+            or lower(b1_0.description) like lower(('%'||?||'%')) escape ''
+        ) 
+        and (
+            ? is null 
+            or b1_0.category=?
+        ) 
+        and (
+            ? is null 
+            or lower(b1_0.author) like lower(('%'||?||'%')) escape ''
+        ) 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:24.780+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /auth/login
+2025-08-31T12:31:24.781+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:24.781+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-08-31T12:31:24.906+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /books/categories
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:24.907+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /books/categories
+2025-08-31T12:31:24.907+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /books
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        o1_0.id,
+        o1_0.date_of_birth,
+        o1_0.email,
+        o1_0.first_name,
+        o1_0.last_name,
+        o1_0.password,
+        o1_0.phone,
+        o1_0.user_type,
+        o1_0.username,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    left join
+        users o1_0 
+            on o1_0.id=b1_0.owner_id 
+    where
+        b1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:24.908+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /messages/user/5f24bdfa-eb37-4371-8cd1-346380b4f87b
+2025-08-31T12:31:24.908+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /books
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:24.909+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /messages/user/5f24bdfa-eb37-4371-8cd1-346380b4f87b
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.book_id,
+        m1_0.content,
+        m1_0.created_at,
+        m1_0.deleted_at,
+        m1_0.deleted_by_recipient,
+        m1_0.deleted_by_sender,
+        m1_0.depth,
+        m1_0.is_deleted,
+        m1_0.is_read,
+        m1_0.parent_message_id,
+        m1_0.recipient_id,
+        m1_0.sender_id,
+        m1_0.subject 
+    from
+        messages m1_0 
+    join
+        books b1_0 
+            on b1_0.id=m1_0.book_id 
+    where
+        (
+            m1_0.sender_id=? 
+            or b1_0.owner_id=?
+        ) 
+    order by
+        m1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:25.294+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /books/available/exclude-current-user
+2025-08-31T12:31:25.294+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /books/user/5f24bdfa-eb37-4371-8cd1-346380b4f87b/all-related
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:25.300+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /books/available/exclude-current-user
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:25.302+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /books/user/5f24bdfa-eb37-4371-8cd1-346380b4f87b/all-related
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.status=? 
+        and b1_0.owner_id<>?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.owner_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        b1_0.id,
+        b1_0.author,
+        b1_0.category,
+        b1_0.created_at,
+        b1_0.description,
+        b1_0.owner_id,
+        b1_0.price,
+        b1_0.publication_year,
+        b1_0.rating,
+        b1_0.review,
+        b1_0.review_count,
+        b1_0.status,
+        b1_0.title,
+        t1_0.borrower_id,
+        t1_0.completed_at,
+        t1_0.created_at,
+        t1_0.lender_id,
+        t1_0.status,
+        t1_0.type 
+    from
+        transactions t1_0 
+    join
+        books b1_0 
+            on b1_0.id=t1_0.book_id 
+    where
+        t1_0.borrower_id=? 
+        and t1_0.status=?
+2025-08-31T12:31:27.218+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /admin/user-actions
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:31:27.224+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /admin/user-actions
+2025-08-31T12:31:27.226+03:00 ERROR 3934 --- [nio-8080-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+
+	at org.example.web.controller.AdminController.getAllUserActions(AdminController.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.example.web.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:70) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:31:27.227+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-08-31T12:31:27.228+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:27.228+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T12:31:39.459+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/
+2025-08-31T12:31:39.459+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:39.459+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/
+2025-08-31T12:31:39.478+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/stylesheet.css
+2025-08-31T12:31:39.478+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:39.478+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/stylesheet.css
+2025-08-31T12:31:39.486+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/login.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:39.486+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:39.486+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/login.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:39.511+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/background.gif
+2025-08-31T12:31:39.511+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:39.511+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/background.gif
+2025-08-31T12:31:43.811+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /h2-console/login.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.817+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.817+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /h2-console/login.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.838+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/header.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.838+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.839+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/header.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.840+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tables.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.840+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.840+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tables.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.841+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/query.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.842+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.842+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/query.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.844+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/help.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.844+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.844+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/help.jsp?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:43.852+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_line.gif
+2025-08-31T12:31:43.852+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_rollback.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_refresh.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_line.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_commit.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_disconnect.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_refresh.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_commit.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_rollback.gif
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.853+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_disconnect.gif
+2025-08-31T12:31:43.856+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_run.gif
+2025-08-31T12:31:43.856+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.856+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_run.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_stop.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_run_selected.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_stop.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_help.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_run_selected.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/icon_history.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_help.gif
+2025-08-31T12:31:43.857+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/icon_history.gif
+2025-08-31T12:31:43.882+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree.js
+2025-08-31T12:31:43.882+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.882+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree.js
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_plus.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_database.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_minus.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_database.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_column.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_plus.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_table.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_empty.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_table.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_minus.gif
+2025-08-31T12:31:43.888+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.889+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_column.gif
+2025-08-31T12:31:43.889+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_empty.gif
+2025-08-31T12:31:43.891+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_index_az.gif
+2025-08-31T12:31:43.891+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_index.gif
+2025-08-31T12:31:43.891+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_type.gif
+2025-08-31T12:31:43.891+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.891+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_index_az.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_type.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_index.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_view.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_folder.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_folder.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_users.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_users.gif
+2025-08-31T12:31:43.892+03:00 DEBUG 3934 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_view.gif
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_info.gif
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_info.gif
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/tree_user.gif
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:43.894+03:00 DEBUG 3934 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/tree_user.gif
+2025-08-31T12:31:48.856+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /h2-console/query.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:48.857+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:48.858+03:00 DEBUG 3934 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /h2-console/query.do?jsessionid=427779ad72eaa0ed62e86f12d92c40c4
+2025-08-31T12:31:48.876+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /h2-console/table.js
+2025-08-31T12:31:48.876+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:31:48.877+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /h2-console/table.js
+2025-08-31T12:33:04.223+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /admin/actions-by-type?actionType=BOOK_CREATED
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.date_of_birth,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.user_type,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-08-31T12:33:04.226+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /admin/actions-by-type?actionType=BOOK_CREATED
+2025-08-31T12:33:04.227+03:00 ERROR 3934 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from List<UserActionLog> to List<AdminController.UserActionLog>
+
+	at org.example.web.controller.AdminController.getActionsByType(AdminController.java:81) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.example.web.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:70) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-31T12:33:04.228+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error?actionType=BOOK_CREATED
+2025-08-31T12:33:04.228+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-08-31T12:33:04.229+03:00 DEBUG 3934 --- [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2025-08-31T13:01:25.193+03:00  INFO 3934 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T13:01:27.212+03:00  INFO 3934 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T13:01:27.217+03:00  INFO 3934 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists books cascade 
+Hibernate: 
+    drop table if exists comments cascade 
+Hibernate: 
+    drop table if exists messages cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+Hibernate: 
+    drop table if exists user_action_logs cascade 
+Hibernate: 
+    drop table if exists users cascade 
+2025-08-31T13:01:27.222+03:00  INFO 3934 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T13:01:27.223+03:00  INFO 3934 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:10 h
+[INFO] Finished at: 2025-08-31T13:01:27+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.0:run (default-cli) on project web-app: Process terminated with exit code: 143 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

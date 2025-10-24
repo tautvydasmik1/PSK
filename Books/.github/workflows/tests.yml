@@ -1,0 +1,127 @@
+name: CI Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Run unit tests (with JaCoCo)
+        run: mvn -B -DskipTests=false test
+
+      - name: Package web app
+        run: mvn -pl web-app -am -DskipTests package
+
+      - name: Run OWASP Dependency-Check (GitHub Action)
+        uses: jeremylong/dependency-check-action@v2
+        with:
+          scan: 'web-app'
+          format: 'HTML'
+          out: 'web-app/target/dependency-check-report.html'
+
+      - name: Upload dependency-check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: web-app/target/dependency-check-report.html
+
+      - name: Start web app in background
+        # start the web-app module using spring-boot:run to avoid guessing the jar name
+        run: |
+          nohup mvn -pl web-app -am -DskipTests spring-boot:run > webapp.log 2>&1 &
+          echo $! > webapp.pid
+          echo "Waiting for web app to become available on port 8080..."
+          for i in {1..60}; do
+            if curl -sSf http://localhost:8080/api >/dev/null 2>&1 || curl -sSf http://localhost:8080/ >/dev/null 2>&1 ; then
+              echo "App is up"
+              break
+            fi
+            sleep 2
+          done
+          if ! curl -sSf http://localhost:8080/api >/dev/null 2>&1 && ! curl -sSf http://localhost:8080/ >/dev/null 2>&1 ; then
+            echo "App did not start in time. Dumping webapp.log"
+            tail -n +1 webapp.log || true
+            exit 1
+          fi
+
+      - name: Run smoke HTTP tests
+        # Uses curl + jq to perform the login -> reservation -> comment flow. Fails job if expectations not met.
+        run: |
+          set -euo pipefail
+
+          echo "Attempting login against a list of possible endpoints to capture JWT..."
+          LOGIN_URLS=(
+            "http://localhost:8080/api/auth/login-smoke"
+            "http://localhost:8080/api/auth/login"
+            "http://localhost:8080/auth/login-smoke"
+            "http://localhost:8080/auth/login"
+          )
+
+          TOKEN=""
+          for url in "${LOGIN_URLS[@]}"; do
+            echo "Trying $url"
+            HTTP_CODE=$(curl -s -w "%{http_code}" -o response.json -X POST -H "Content-Type: application/json" -d '{"username":"user1","password":"pass1"}' "$url" || true)
+            echo "HTTP_CODE=$HTTP_CODE"
+            if [ "$HTTP_CODE" = "200" ]; then
+              echo "Login returned 200 from $url"
+              # try to extract token from a few common fields
+              TOKEN=$(cat response.json | jq -r '.token // .accessToken // .jwt // .data.token // empty' || true)
+              if [ -n "$TOKEN" ] && [ "$TOKEN" != "null" ]; then
+                echo "Captured token"
+                break
+              else
+                echo "No token found in response body, but 200 received. Response was:" && cat response.json || true
+                # continue trying other endpoints
+              fi
+            fi
+          done
+
+          if [ -z "${TOKEN}" ]; then
+            echo "Failed to capture JWT from login endpoints"
+            echo "Last response:" && cat response.json || true
+            exit 1
+          fi
+
+          echo "Running reservation POST (expects 201)"
+          RES_CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -d '{"bookId":1,"until":"2025-10-10"}' http://localhost:8080/api/reservations || true)
+          echo "Reservation returned $RES_CODE"
+          if [ "$RES_CODE" != "201" ]; then
+            echo "Reservation step failed (expected 201). Check webapp.log for details."
+            tail -n +1 webapp.log || true
+            exit 1
+          fi
+
+          echo "Running comment POST (expects 201)"
+          COM_CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -d '{"bookId":1,"text":"Puiki!"}' http://localhost:8080/api/comments || true)
+          echo "Comment returned $COM_CODE"
+          if [ "$COM_CODE" != "201" ]; then
+            echo "Comment step failed (expected 201). Check webapp.log for details."
+            tail -n +1 webapp.log || true
+            exit 1
+          fi
+
+      - name: Stop web app
+        if: always()
+        run: |
+          if [ -f webapp.pid ]; then
+            kill $(cat webapp.pid) || true
+            rm -f webapp.pid
+          fi
+
+      - name: Upload webapp.log as artifact (for debugging on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: webapp-log
+          path: webapp.log
