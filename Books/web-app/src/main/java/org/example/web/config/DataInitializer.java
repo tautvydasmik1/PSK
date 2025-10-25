@@ -45,46 +45,54 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     private void createSampleBooks() {
-        // Check if books already exist
-        if (bookRepository.count() > 0) {
-            System.out.println("📚 Books already exist, skipping sample book creation");
-            return;
-        }
-
-        // Get users
+        // Create sample books for users, but only if that specific title doesn't already exist for the owner.
         User alice = userService.getUserByUsername("user");
         User bob = userService.getUserByUsername("user2");
         User carol = userService.getUserByUsername("user3");
 
-                // Create 3 sample books for Alice (user)
-        createBookForUser(alice, "The Great Gatsby", "F. Scott Fitzgerald", Book.BookCategory.FICTION,
+        // Alice
+        ensureBook(alice, "The Great Gatsby", "F. Scott Fitzgerald", Book.BookCategory.FICTION,
             "A classic American novel about the Jazz Age and the American Dream.", 1925);
 
-        createBookForUser(alice, "Pride and Prejudice", "Jane Austen", Book.BookCategory.ROMANCE,
+        ensureBook(alice, "Pride and Prejudice", "Jane Austen", Book.BookCategory.ROMANCE,
             "A witty romance novel about manners, marriage, and social expectations.", 1813);
 
-        createBookForUser(alice, "The Catcher in the Rye", "J.D. Salinger", Book.BookCategory.FICTION,
+        ensureBook(alice, "The Catcher in the Rye", "J.D. Salinger", Book.BookCategory.FICTION,
             "A coming-of-age story following Holden Caulfield in New York City.", 1951);
 
-        // Create 3 sample books for Bob (user2)
-        createBookForUser(bob, "To Kill a Mockingbird", "Harper Lee", Book.BookCategory.FICTION,
+        // Bob
+        ensureBook(bob, "To Kill a Mockingbird", "Harper Lee", Book.BookCategory.FICTION,
             "A powerful story about racial injustice and the loss of innocence.", 1960);
 
-        createBookForUser(bob, "The Lord of the Rings", "J.R.R. Tolkien", Book.BookCategory.FANTASY,
+        ensureBook(bob, "The Lord of the Rings", "J.R.R. Tolkien", Book.BookCategory.FANTASY,
             "An epic fantasy adventure about the quest to destroy the One Ring.", 1954);
 
-        createBookForUser(bob, "Dune", "Frank Herbert", Book.BookCategory.SCIENCE_FICTION,
+        ensureBook(bob, "Dune", "Frank Herbert", Book.BookCategory.SCIENCE_FICTION,
             "A science fiction epic set on the desert planet Arrakis.", 1965);
 
-        // Create 3 sample books for Carol (user3)
-        createBookForUser(carol, "1984", "George Orwell", Book.BookCategory.SCIENCE_FICTION,
+        // Carol
+        ensureBook(carol, "1984", "George Orwell", Book.BookCategory.SCIENCE_FICTION,
             "A dystopian novel about totalitarianism and surveillance society.", 1949);
 
-        createBookForUser(carol, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", Book.BookCategory.FANTASY,
+        ensureBook(carol, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", Book.BookCategory.FANTASY,
             "The first book in the magical Harry Potter series.", 1997);
 
-        createBookForUser(carol, "The Hunger Games", "Suzanne Collins", Book.BookCategory.THRILLER,
+        ensureBook(carol, "The Hunger Games", "Suzanne Collins", Book.BookCategory.THRILLER,
             "A dystopian novel about survival in a televised death match.", 2008);
+    }
+
+    private void ensureBook(User owner, String title, String author, Book.BookCategory category,
+                            String description, Integer year) {
+        if (owner == null) return; // user missing
+
+        boolean exists = bookRepository.existsByTitleAndOwnerId(title, owner.getId());
+        if (exists) {
+            System.out.println("📚 Sample book already exists for user " + owner.getUsername() + ": " + title);
+            return;
+        }
+
+        createBookForUser(owner, title, author, category, description, year);
+        System.out.println("➕ Created sample book for " + owner.getUsername() + ": " + title);
     }
 
     private void createBookForUser(User owner, String title, String author, Book.BookCategory category,

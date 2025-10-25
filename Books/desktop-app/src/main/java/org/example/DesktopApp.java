@@ -371,6 +371,7 @@ public class DesktopApp extends Application {
 
         // Books table (needs to be declared before the buttons)
         TableView<Book> booksTable = new TableView<>();
+        booksTable.setPlaceholder(new Label("No books available"));
 
                 // Add search functionality
         searchButton.setOnAction(e -> {
@@ -510,6 +511,7 @@ public class DesktopApp extends Application {
         titleLabel.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
 
         TableView<Book> myBooksTable = new TableView<>();
+        myBooksTable.setPlaceholder(new Label("You have no books"));
         TableColumn<Book, String> titleCol = new TableColumn<>("Title");
         titleCol.setCellValueFactory(data -> new javafx.beans.property.SimpleStringProperty(data.getValue().getTitle()));
 

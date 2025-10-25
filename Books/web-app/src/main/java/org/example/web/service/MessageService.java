@@ -32,7 +32,7 @@ public class MessageService {
 
 
     public List<Message> getUserMessages(String userId) {
-        return messageRepository.findBySenderIdOrBookOwnerIdOrderByCreatedAtDesc(userId, userId);
+        return messageRepository.findMessagesForUser(userId);
     }
 
 

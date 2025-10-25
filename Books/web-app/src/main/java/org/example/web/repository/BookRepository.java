@@ -41,13 +41,7 @@ public interface BookRepository extends JpaRepository<Book, String> {
 
     List<Book> findByStatus(Book.BookStatus status);
 
-
-
-
-
-
-
-
-
+    @Query("SELECT CASE WHEN COUNT(b) > 0 THEN true ELSE false END FROM Book b WHERE LOWER(b.title) = LOWER(:title) AND b.owner.id = :ownerId")
+    boolean existsByTitleAndOwnerId(@Param("title") String title, @Param("ownerId") String ownerId);
 
 }
