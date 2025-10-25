@@ -70,6 +70,43 @@ public class ApiClient {
         });
     }
 
+    // Registration
+    public CompletableFuture<User> register(String username, String password, String firstName, String lastName,
+                                            String email, String phone, String dateOfBirth) {
+        return CompletableFuture.supplyAsync(() -> {
+            try {
+                String jsonBody = String.format(
+                    "{\"username\":\"%s\",\"password\":\"%s\",\"firstName\":\"%s\",\"lastName\":\"%s\",\"email\":\"%s\",\"phone\":\"%s\",\"dateOfBirth\":\"%s\"}",
+                    username, password, firstName, lastName, email, phone != null ? phone : "", dateOfBirth
+                );
+
+                HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(BASE_URL + "/auth/register"))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
+                    .build();
+
+                HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+                if (response.statusCode() == 200) {
+                    var responseMap = objectMapper.readValue(response.body(), new TypeReference<java.util.Map<String, Object>>() {});
+                    if (Boolean.TRUE.equals(responseMap.get("success"))) {
+                        var userData = (java.util.Map<String, Object>) responseMap.get("user");
+                        String token = (String) responseMap.get("token");
+                        setAuthToken(token);
+                        return objectMapper.convertValue(userData, User.class);
+                    } else {
+                        throw new RuntimeException("Registration failed: " + responseMap.get("message"));
+                    }
+                } else {
+                    throw new RuntimeException("Registration failed: HTTP " + response.statusCode());
+                }
+            } catch (Exception e) {
+                throw new RuntimeException("Error during registration", e);
+            }
+        });
+    }
+
     public void setAuthToken(String token) {
         this.authToken = token;
     }

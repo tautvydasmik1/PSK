@@ -64,7 +64,15 @@ public class DesktopApp extends Application {
         loginButton.setMaxWidth(300);
         loginButton.setOnAction(e -> handleLogin(usernameField.getText(), passwordField.getText()));
 
-        loginPane.getChildren().addAll(titleLabel, usernameField, passwordField, loginButton);
+        Button registerButton = new Button("Register");
+        registerButton.setMaxWidth(300);
+        registerButton.setOnAction(e -> showRegisterDialog());
+
+        HBox buttonBox = new HBox(10);
+        buttonBox.setAlignment(javafx.geometry.Pos.CENTER);
+        buttonBox.getChildren().addAll(loginButton, registerButton);
+
+        loginPane.getChildren().addAll(titleLabel, usernameField, passwordField, buttonBox);
 
         Scene scene = new Scene(loginPane, 400, 300);
         primaryStage.setScene(scene);
@@ -73,10 +81,27 @@ public class DesktopApp extends Application {
     private void handleLogin(String username, String password) {
         System.out.println("Login button clicked! Username: " + username);
 
-        // Show loading indicator
-        Button loginButton = (Button) loginPane.getChildren().get(3);
-        loginButton.setText("Logging in...");
-        loginButton.setDisable(true);
+        // Show loading indicator - locate the Login button inside the login pane (it may be inside an HBox)
+        Button loginButton = null;
+        for (javafx.scene.Node node : loginPane.getChildren()) {
+            if (node instanceof HBox) {
+                HBox hb = (HBox) node;
+                for (javafx.scene.Node child : hb.getChildren()) {
+                    if (child instanceof Button) {
+                        Button b = (Button) child;
+                        if ("Login".equals(b.getText())) { loginButton = b; break; }
+                    }
+                }
+                if (loginButton != null) break;
+            } else if (node instanceof Button) {
+                Button b = (Button) node;
+                if ("Login".equals(b.getText())) { loginButton = b; break; }
+            }
+        }
+        if (loginButton != null) {
+            loginButton.setText("Logging in...");
+            loginButton.setDisable(true);
+        }
 
         // Call the real login API
         apiClient.login(username, password)
@@ -89,12 +114,109 @@ public class DesktopApp extends Application {
             })
             .exceptionally(throwable -> {
                 javafx.application.Platform.runLater(() -> {
-                    loginButton.setText("Login");
-                    loginButton.setDisable(false);
+                    // Restore Login button state (locate it again)
+                    Button btn = null;
+                    for (javafx.scene.Node node : loginPane.getChildren()) {
+                        if (node instanceof HBox) {
+                            HBox hb = (HBox) node;
+                            for (javafx.scene.Node child : hb.getChildren()) {
+                                if (child instanceof Button) {
+                                    Button b = (Button) child;
+                                    if ("Login".equals(b.getText()) || "Logging in...".equals(b.getText())) { btn = b; break; }
+                                }
+                            }
+                            if (btn != null) break;
+                        } else if (node instanceof Button) {
+                            Button b = (Button) node;
+                            if ("Login".equals(b.getText()) || "Logging in...".equals(b.getText())) { btn = b; break; }
+                        }
+                    }
+                    if (btn != null) {
+                        btn.setText("Login");
+                        btn.setDisable(false);
+                    }
                     showAlert("Login Failed", "Invalid username or password. Please try again.");
                 });
                 return null;
             });
+    }
+
+    // Registration dialog - collects user details and calls backend register endpoint
+    private void showRegisterDialog() {
+        Dialog<Void> dialog = new Dialog<>();
+        dialog.setTitle("Register");
+
+        DialogPane pane = dialog.getDialogPane();
+        pane.getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
+
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(20, 150, 10, 10));
+
+        TextField usernameField = new TextField();
+        usernameField.setPromptText("Username");
+        PasswordField passwordField = new PasswordField();
+        passwordField.setPromptText("Password");
+        TextField firstNameField = new TextField();
+        firstNameField.setPromptText("First name");
+        TextField lastNameField = new TextField();
+        lastNameField.setPromptText("Last name");
+        TextField emailField = new TextField();
+        emailField.setPromptText("Email");
+        TextField phoneField = new TextField();
+        phoneField.setPromptText("Phone (optional)");
+        TextField dobField = new TextField();
+        dobField.setPromptText("Date of Birth (yyyy-MM-dd)");
+
+        grid.add(new Label("Username:"), 0, 0);
+        grid.add(usernameField, 1, 0);
+        grid.add(new Label("Password:"), 0, 1);
+        grid.add(passwordField, 1, 1);
+        grid.add(new Label("First name:"), 0, 2);
+        grid.add(firstNameField, 1, 2);
+        grid.add(new Label("Last name:"), 0, 3);
+        grid.add(lastNameField, 1, 3);
+        grid.add(new Label("Email:"), 0, 4);
+        grid.add(emailField, 1, 4);
+        grid.add(new Label("Phone:"), 0, 5);
+        grid.add(phoneField, 1, 5);
+        grid.add(new Label("Date of Birth:"), 0, 6);
+        grid.add(dobField, 1, 6);
+
+        pane.setContent(grid);
+
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == ButtonType.OK) {
+                String username = usernameField.getText().trim();
+                String password = passwordField.getText();
+                String firstName = firstNameField.getText().trim();
+                String lastName = lastNameField.getText().trim();
+                String email = emailField.getText().trim();
+                String phone = phoneField.getText().trim();
+                String dob = dobField.getText().trim();
+
+                if (username.isEmpty() || password.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() || dob.isEmpty()) {
+                    showAlert("Registration Failed", "Please fill in all required fields.");
+                    return null;
+                }
+
+                apiClient.register(username, password, firstName, lastName, email, phone, dob)
+                    .thenAccept(user -> {
+                        javafx.application.Platform.runLater(() -> {
+                            currentUser = user;
+                            showMainApplication();
+                        });
+                    })
+                    .exceptionally(ex -> {
+                        javafx.application.Platform.runLater(() -> showAlert("Registration Failed", ex.getMessage()));
+                        return null;
+                    });
+            }
+            return null;
+        });
+
+        dialog.showAndWait();
     }
 
     private void showMainApplication() {

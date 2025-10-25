@@ -1,11 +1,25 @@
 package org.example.web.dto;
 
 import org.example.web.model.Book;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 public class CreateBookRequest {
+    @NotBlank
+    @Size(max = 200)
     private String title;
+
+    @NotBlank
+    @Size(max = 100)
     private String author;
+
+    @NotNull
     private Book.BookCategory category;
+
+    @Size(max = 2000)
     private String description;
     private String ownerId; // For now, we'll use a simple owner ID
 
@@ -28,8 +42,7 @@ public class CreateBookRequest {
     public String getOwnerId() { return ownerId; }
     public void setOwnerId(String ownerId) { this.ownerId = ownerId; }
 
-
-
+    @Min(1000)
     public Integer getPublicationYear() { return publicationYear; }
     public void setPublicationYear(Integer publicationYear) { this.publicationYear = publicationYear; }
 

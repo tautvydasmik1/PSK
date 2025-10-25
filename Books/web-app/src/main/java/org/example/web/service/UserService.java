@@ -2,12 +2,15 @@ package org.example.web.service;
 
 import org.example.web.model.User;
 import org.example.web.repository.UserRepository;
+import org.example.web.dto.RegisterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 
 @Service
 public class UserService {
@@ -27,6 +30,37 @@ public class UserService {
             }
         }
         return null;
+    }
+
+    // Register a new user from a RegisterRequest DTO
+    public User registerUser(RegisterRequest req) {
+        // Basic uniqueness checks
+        if (userRepository.findByUsername(req.getUsername()).isPresent()) {
+            throw new RuntimeException("Username already exists");
+        }
+        if (userRepository.findByEmail(req.getEmail()).isPresent()) {
+            throw new RuntimeException("Email already exists");
+        }
+
+        LocalDate dob;
+        try {
+            dob = LocalDate.parse(req.getDateOfBirth());
+        } catch (DateTimeParseException e) {
+            throw new RuntimeException("Invalid dateOfBirth format. Expected yyyy-MM-dd");
+        }
+
+        User user = new User(
+                req.getUsername(),
+                passwordEncoder.encode(req.getPassword()),
+                req.getFirstName(),
+                req.getLastName(),
+                req.getEmail(),
+                req.getPhone(),
+                dob,
+                User.UserType.REGULAR_USER
+        );
+
+        return userRepository.save(user);
     }
 
 

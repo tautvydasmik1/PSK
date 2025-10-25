@@ -3,6 +3,7 @@ package org.example.web.controller;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.example.web.dto.LoginRequest;
+import org.example.web.dto.RegisterRequest;
 import org.example.web.model.User;
 import org.example.web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,32 @@ public class AuthController {
 
     @Value("${jwt.expiration}")
     private Long jwtExpiration;
+
+    @PostMapping("/register")
+    @PermitAll
+    public ResponseEntity<?> register(@RequestBody RegisterRequest req) {
+        try {
+            User newUser = userService.registerUser(req);
+            String token = generateJwtToken(newUser);
+
+            Map<String, Object> response = new HashMap<>();
+            response.put("success", true);
+            response.put("user", newUser);
+            response.put("token", token);
+            response.put("message", "Registration successful");
+            return ResponseEntity.ok(response);
+        } catch (RuntimeException e) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("success", false);
+            response.put("message", e.getMessage());
+            return ResponseEntity.badRequest().body(response);
+        } catch (Exception e) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("success", false);
+            response.put("message", "Registration failed: " + e.getMessage());
+            return ResponseEntity.badRequest().body(response);
+        }
+    }
 
     @PostMapping("/login")
     @PermitAll
